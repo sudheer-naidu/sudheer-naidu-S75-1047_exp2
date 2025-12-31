@@ -1,0 +1,40 @@
+Hibernate: 
+    insert
+    into
+        Student
+        (marks, name, id)
+    values
+        (?, ?, ?)
+Student Created
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.marks,
+        s1_0.name
+    from
+        Student s1_0
+    where
+        s1_0.id=?
+Student Not Found
+Hibernate:
+    select
+        s1_0.id,
+        s1_0.marks,
+        s1_0.name
+    from
+        Student s1_0
+    where
+        s1_0.id=?
+Student Updated
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.marks,
+        s1_0.name
+    from
+        Student s1_0
+    where
+        s1_0.id=?
+Student Deleted
+Dec 31, 2025 3:16:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PoolState stop
+INFO: HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sudheerdb]
