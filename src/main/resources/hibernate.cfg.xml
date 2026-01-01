@@ -1,11 +1,20 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC
         "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+>>>>>>> 279a2c7007076c26d91a11fee9d6e8029de75087
 
 <hibernate-configuration>
     <session-factory>
 
+<<<<<<< HEAD
         <!-- MySQL connection -->
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sudheerdb?useSSL=false&amp;allowPublicKeyRetrieval=true</property>
@@ -25,3 +34,37 @@
 
     </session-factory>
 </hibernate-configuration>
+=======
+        <!-- JDBC -->
+        <property name="hibernate.connection.driver_class">
+            com.mysql.cj.jdbc.Driver
+        </property>
+
+        <!-- USE THE SAME DATABASE NAME YOU CREATED -->
+        <property name="hibernate.connection.url">
+            jdbc:mysql://localhost:3306/sudheerdb
+        </property>
+
+        <property name="hibernate.connection.username">
+            root
+        </property>
+
+        <property name="hibernate.connection.password">
+            Sudheer@2005
+        </property>
+
+        <!-- Hibernate -->
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.MySQL8Dialect
+        </property>
+
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Entity class -->
+        <mapping class="com.example.Student"/>
+
+    </session-factory>
+</hibernate-configuration>
+>>>>>>> 279a2c7007076c26d91a11fee9d6e8029de75087

@@ -1,4 +1,11 @@
 target/
+<<<<<<< HEAD
 .idea/
 .vscode/
 *.log
+=======
+*.log
+*.class
+.idea/
+.vscode/
+>>>>>>> 279a2c7007076c26d91a11fee9d6e8029de75087
